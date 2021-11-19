@@ -1,0 +1,103 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+      <button class="navbar-toggler" type="button" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+      <div class="collapse navbar-collapse"  #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+ 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
+  <div class="alert alert-secondary" role="alert">
+    A simple secondary alert—check it out!
+  </div>
+  <div class="alert alert-success" role="alert">
+    A simple success alert—check it out!
+  </div>
+  <div class="alert alert-danger" role="alert">
+    A simple danger alert—check it out!
+  </div>
+  <div class="alert alert-warning" role="alert">
+    A simple warning alert—check it out!
+  </div>
+  <div class="alert alert-info" role="alert">
+    A simple info alert—check it out!
+  </div>
+  <div class="alert alert-light" role="alert">
+    A simple light alert—check it out!
+  </div>
+  <div class="alert alert-dark" role="alert">
+    A simple dark alert—check it out!
+  </div>
+
+  <h1>FONTAWESOME</h1>
+  <fa-icon [icon]="faCoffee"  size="4x" flip="horizontal"></fa-icon>  
+  <fa-icon [icon]="faCoffee"  size="4x" flip="vertical"></fa-icon>  
+  <fa-icon [icon]="faCoffee"  size="4x" flip="both"></fa-icon>  
+  <fa-icon [icon]="faCoffee"  size="4x" flip="both"></fa-icon>  
+  <fa-icon [icon]="faCoffee"  size="4x" flip="both"></fa-icon>  
+  <fa-icon [icon]="ad"  size="4x"></fa-icon>  
+  <!-- <fa-icon [icon]="circle"  size="4x"></fa-icon>   -->
+  <fa-icon [icon]="['fas','circle']"></fa-icon>
+
+
+ 
+<fa-icon [icon]="faCoffee" size="4x"  [styles]="{'stroke': 'red', 'color': 'red'}"></fa-icon>
+
+
+<i class="fab fa-facebook"></i>
+<hr>
+
+<h1>ANGULAR MATERIAL</h1>
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
